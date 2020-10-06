@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Upload Files</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="upload.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="wrapper" style="padding: 20px;">
+        <div class="container p-3 my-3 bg-dark text-white" style="border-radius: 8pt;">
+            <h1>Select a file to upload</h1>
+            <input class="btn btn-light" id="files" type="file" name="files[]" multiple />
+            <button class="btn btn-success" id="uploadFile">Upload</button>
+            <div id="progress-wrp">
+                <div class="progress" style="margin-top: 15px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                        style=" background-color:steelblue;">
+                        <div class="status">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
